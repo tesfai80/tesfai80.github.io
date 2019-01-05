@@ -1,0 +1,66 @@
+﻿
+.header {
+
+    text-size-adjust:auto !important;
+}
+#profileIMG {
+    background: url('/images/prof.png') no-repeat;
+    position: relative;
+    background-size: contain;
+    min-height: 35vh;
+    background-position: center;
+    isolation: isolate;
+   
+   border-radius:50px;
+   /*background-color:red;*/
+}
+#about{
+
+    background-color:red;
+}
+#Portfolio{
+
+}
+#Contact {
+    background-position: center;
+}
+
+
+.Div {
+    background: url('/images/binarys.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 800px;
+    isolation: isolate;
+}
+.ul {
+  
+   color:white;
+   font-size:large;
+}
+    .ul li {
+       
+        list-style-type: circle;
+        padding-left: 150px;
+    }
+#h2 {
+    padding-left: 150px;
+    color: red;
+}
+#contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.footer {
+    background: #1d5389;
+    margin-top: -100px;
+    height: 100px;
+    color: #fff;
+    position: relative;
+    line-height: 180%;
+    padding: 0 10px;
+    text-align: center;
+}
+

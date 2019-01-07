@@ -67,3 +67,10 @@ main {
         width: 2.65rem;
         height: 2.65rem;
     }
+
+body {
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+

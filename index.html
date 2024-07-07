@@ -1,143 +1,162 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesfay Tadesse | Full Stack Developer</title>
-    <link rel="icon" href="favicon.ico" type="image/png" />
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--<link rel="stylesheet" href="css/Reset.css">-->
-    <link rel="stylesheet" href="css/Styles.css">
-    <!--<link rel="stylesheet" href="css/BlueWhite.css">-->
-    <link rel=" stylesheet" href="css/Header.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <style type="text/css">
-        .selected {
-            font-family: "Gilroy ExtraBold", system-ui, sans-serif;
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-            padding-left: 400px;
-            font-size: xx-large;
-        }
-        .hover {
-          color:springgreen;
-        }
-       
-    </style>
-    <script>
-        $(document).ready(function () {
-            $("li").mouseover(function () {
-                $(this).addClass("hover");
-                var txt = $(this).text();
-                $("#holder").text(txt);
-                $("#holder").addClass("selected");
-               
-            })
-                .mouseout(function () {
-                    $("#holder").removeClass("selected");
-                    $("li").removeClass("hover");
-                });
-        });   
-    </script>
+    <title>Tesfay Tadesse's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-blue sticky-top  " >
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="white nav-item active">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <img src="images/prof.png" alt="Tesfay Tadesse" class="profile-img">
+        <h1>Tesfay Tadesse</h1>
+        <p>Team Lead | Full Stack Developer | Cloud Solution Architect</p>
+        <div class="social-links">
+            <a href="https://github.com/tesfai80" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tesfay-tadesse-0a436857/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <div id="profileIMG">
-
-    </div>
-    <div class="main">
-        <!--<main class="container-fluid">-->
-        <div class="intro Tesfay">Hey,I'm Tesfay Tadesse </div>
-        <div class="tagline Tesfay">Full Stack Developer | Team Leadership | Project managment</div>
-        <div class="icons-social">
-            <a target="_blank" href="https://github.com/tesfai80"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://stackoverflow.com/users/10857626/tesfay"><i class="fab fa-stack-overflow"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/tesfahun-tadesse"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <!--class="Div intro" id="animDiv"-->
-        <!--</main>-->
-    </div>
-    <div class="container-fluid">
-        <span><a id="holder">Holder</a> </span>
-    </div>
-    <section class="Tesfay">
-        <div class="container-fluid center-block col-xs-8">
-            <h1 id="About"></h1>
-            <div class="row ">
-                <div>
-                    <ul  class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C#</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Java</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Python</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>ASP.Net MVC</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SSRS</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Responsive Web</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Proficiency with design patterns and best practices</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>.NET Framework</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>.NET Framework / .NET Core</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Entity Framework</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Web Services / Web API</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Proficiency with design patterns and best practices</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Resource planning, task creation and estimation</li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Java Script</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>REST Api</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>jQuery</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Ajax</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS/CSS3</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>HTML5</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Bootstrap</li>                   
-                    </ul>
-                    <div>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SQL Server</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MongoDB</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>LiteDB</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MS Access</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>IIS / DevOps</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>AWS / Azure</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Test Driven Developmen</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Agile Delivery</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MSBuild</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Git / NPM</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Well-qualified Team Lead and Full Stack Developer familiar with a wide range of programming utilities and languages. Knowledgeable in backend and frontend development requirements, capable of handling any part of the process with ease. Collaborative team player with excellent technical abilities, offering 12 years of related experience. Enthusiastic Cloud Solution Architect experienced in coding and architecting enterprise applications in Insurance, Healthcare, Banking, and government offices. Adept at working with multiple technical teams, architects, security officers, managers, and business users.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-table">
+            <table>
+                <tr>
+                    <th>Programming Languages and Technologies</th>
+                    <td>
+                        <span class="skill">Cloud Computing</span>
+                        <span class="skill">Cloud Engineering</span>
+                        <span class="skill">Solution Architecture</span>
+                        <span class="skill">Azure DevOps</span>
+                        <span class="skill">GitHub</span>
+                        <span class="skill">.NET Core</span>
+                        <span class="skill">.NET Framework</span>
+                        <span class="skill">MVC</span>
+                        <span class="skill">Razor</span>
+                        <span class="skill">Entity Framework</span>
+                        <span class="skill">ADO.NET</span>
+                        <span class="skill">Web API</span>
+                        <span class="skill">Rest API</span>
+                        <span class="skill">Web Application</span>
+                        <span class="skill">C#</span>
+                        <span class="skill">T-SQL</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Web Technologies and Scripting</th>
+                    <td>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Reactjs</span>
+                        <span class="skill">jQuery</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">Bootstrap</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JSON</span>
+                        <span class="skill">XML</span>
+                        <span class="skill">AJAX</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Databases</th>
+                    <td>
+                        <span class="skill">Azure Cosmos DB</span>
+                        <span class="skill">SQL Server</span>
+                        <span class="skill">MongoDB</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Platforms</th>
+                    <td>
+                        <span class="skill">Visual Studio</span>
+                        <span class="skill">Visual Studio Code</span>
+                        <span class="skill">Notepad++</span>
+                        <span class="skill">Eclipse</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Operating Systems</th>
+                    <td>
+                        <span class="skill">Windows</span>
+                        <span class="skill">Linux</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Reporting</th>
+                    <td>
+                        <span class="skill">Kibana</span>
+                        <span class="skill">Crystal Reports</span>
+                        <span class="skill">MS SQL Server Reporting Service (SSRS)</span>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
-    <div class="footer intro">
-        <address>
-            <a href="mailto:tesfai80@hotmail.com">tesfai80@hotmail.com</a>
-        </address>
-    </div>
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Development Consultant and Cloud Solution Architect</h3>
+        <p>Microsoft Israel, 2022 - Current</p>
+        <ul>
+            <li>Azure Solution Development, designing and developing cloud-based applications.</li>
+            <li>Code reviews for enterprise and medium worldwide companies</li>
+            <li>Azure DevOps, GitHub Actions</li>
+            <li>POC’s on new technologies and features</li>
+            <li>Workshops on development technologies and tools</li>
+            <li>Troubleshooting and Solving bugs and problems</li>
+        </ul>
+        <h3>Team Lead, Senior Full Stack Developer</h3>
+        <p>Brinks Inc, Israel, 2016 - 2022</p>
+        <ul>
+            <li>Manage 5 developers and managing team workflow and assignments</li>
+            <li>Experience in designing and developing web and windows-based applications</li>
+            <li>Created different business classes and interfaces using .NET Framework 4.x</li>
+            <li>Experience in working with Microservices</li>
+            <li>Working experience in RabbitMQ</li>
+            <li>Designed applications using UML and Use Cases and Design Patterns</li>
+            <li>Analyzing, designing, developing, implementing, and maintaining application code</li>
+            <li>Develop proprietary solutions to automate customer inquiries</li>
+            <li>Designed Web & Windows applications linked to firm-wide SQL databases and MongoDB</li>
+            <li>Experience of Multi-Threaded programming</li>
+            <li>Experience with Business Intelligence (BI) tools: Integration Services (SSIS), Reporting Services (SSRS)</li>
+            <li>Application of quality assurance processes to the implemented solution</li>
+            <li>Maintaining, tuning, and repairing applications, providing user support</li>
+        </ul>
+        <h3>.NET Full Stack Developer</h3>
+        <p>Brinks Inc – Ness Technologies Israel, 2009 - 2016</p>
+        <ul>
+            <li>Built, tested, and deployed scalable, highly available and modular software products</li>
+            <li>Worked closely with clients to establish problem specifications and system designs</li>
+            <li>Debugged and modified software components</li>
+            <li>Collaborated with developers and performance engineers to enhance supportability and identify performance bottlenecks</li>
+            <li>Implemented process management system using C#</li>
+        </ul>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>Current: Open University, Computer Science</p>
+        <p>John Bryce: Certified Software Developer</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tesfai80@hotmail.com">tesfai80@hotmail.com</a></p>
+        <p>Phone: 0546592985</p>
+        <p>Location: Rishon Le Zion, Israel</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tesfay Tadesse</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,76 +1,182 @@
-﻿html {
-    font-family: 'Roboto', sans-serif;
+﻿body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('../images/code-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
 }
 
-@media (min-width: 576px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 992px) {
-    html {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1200px) {
-    html {
-        font-size: 20px;
-    }
-}
-
-.icons-social i {
-    font-size: 3em;
-}
-
-/* Custom Styles */
-
-main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    padding: 0 30px;
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
-    main > .intro {
-        font-family: 'Reem Kufi', sans-serif;
-        font-size: 3.75em;
-        font-weight: 600;
-    }
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
 
-    main > .tagline {
-        font-size: 1.5rem;
-        margin: 1.5rem 0;
-        font-weight: 100;
-    }
+header h1 {
+    margin: 0.5rem 0 0.2rem 0;
+}
 
-.icons-social i {
+header p {
+    margin: 0.2rem 0;
+}
+
+.social-links {
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-links .linkedin {
+    color: #0e76a8;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.skills-table {
+    margin-top: 1rem;
+}
+
+.skills-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
     padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
-.devto {
-    margin-bottom: -0.20rem;
+.skills-table th {
+    background-color: #555;
+    color: #fff;
 }
 
-    .devto svg {
-        margin-bottom: -0.20rem;
-        margin-left: 0.675rem;
-        width: 2.65rem;
-        height: 2.65rem;
+.skills-table td {
+    background-color: #333;
+    color: #fff;
+}
+
+.skills-table .skill {
+    display: inline-block;
+    background: #444;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 2px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.skills-table .skill:hover {
+    background: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 1rem;
     }
 
-body {
-    background-color: #222222;
-    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+        text-align: center;
+    }
 }
-
-

@@ -3,18 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesfay Tadesse's Portfolio</title>
-    <link rel="stylesheet" href="/css/theme.css">
+    <title>Tesfay Tadesse</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #64ffda;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #8892b0;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0a192f;
+            padding: 1rem 0;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid #112240;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #8892b0;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #64ffda;
+        }
+        section {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #233554;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            color: #ccd6f6;
+        }
+        .skill-badge {
+            display: inline-block;
+            background-color: #233554;
+            color: #64ffda;
+            padding: 0.5rem 1rem;
+            margin: 0.3rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #112240;
+            color: #8892b0;
+        }
+        .social-links {
+            margin-top: 1rem;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #64ffda;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/prof.png" alt="Tesfay Tadesse" class="profile-img">
         <h1>Tesfay Tadesse</h1>
         <p>Senior Full Stack Engineer | Cloud Solution Architect | Team Lead</p>
         <div class="social-links">
             <a href="https://github.com/tesfai80" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/tesfay-tadesse-0a436857/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/tesfay-tadesse-0a436857/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </header>
     <nav>
@@ -32,117 +124,62 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-table">
-            <table>
-                <tr>
-                    <th>Programming Languages and Technologies</th>
-                    <td>
-                        <span class="skill">C#</span>
-                        <span class="skill">.NET Core / Framework</span>
-                        <span class="skill">ASP.NET</span>
-                        <span class="skill">Entity Framework</span>
-                        <span class="skill">REST APIs</span>
-                        <span class="skill">Microservices</span>
-                        <span class="skill">Azure SDK</span>
-                        <span class="skill">T-SQL</span>
-                        <span class="skill">Cosmos DB</span>
-                        <span class="skill">Service Bus</span>
-                        <span class="skill">Service Fabric</span>
-                        <span class="skill">Kubernetes</span>
-                        <span class="skill">Node.js</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Frontend</th>
-                    <td>
-                        <span class="skill">React.js</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">HTML/CSS</span>
-                        <span class="skill">jQuery</span>
-                        <span class="skill">Bootstrap</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Databases</th>
-                    <td>
-                        <span class="skill">Azure Cosmos DB</span>
-                        <span class="skill">SQL Server</span>
-                        <span class="skill">MongoDB</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Cloud & DevOps</th>
-                    <td>
-                        <span class="skill">Azure</span>
-                        <span class="skill">Azure DevOps</span>
-                        <span class="skill">CI/CD Pipelines</span>
-                        <span class="skill">GitHub Actions</span>
-                        <span class="skill">Google Cloud (GCP)</span>
-                        <span class="skill">Amazon Web Services (AWS)</span>
-                        <span class="skill">Docker</span>
-                        <span class="skill">AKS</span>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Tools & Platforms</th>
-                    <td>
-                        <span class="skill">Visual Studio</span>
-                        <span class="skill">VS Code</span>
-                        <span class="skill">Grafana</span>
-                        <span class="skill">Kibana</span>
-                        <span class="skill">SSRS</span>
-                        <span class="skill">SSIS</span>
-                        <span class="skill">Monday.com</span>
-                    </td>
-                </tr>
-            </table>
+        <div>
+            <span class="skill-badge">C#</span>
+            <span class="skill-badge">.NET Core</span>
+            <span class="skill-badge">ASP.NET</span>
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">SQL Server</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">Azure</span>
+            <span class="skill-badge">Azure DevOps</span>
+            <span class="skill-badge">GitHub Actions</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">AKS</span>
+            <span class="skill-badge">Google Cloud</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">Service Fabric</span>
+            <span class="skill-badge">CI/CD Pipelines</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">Monday.com</span>
         </div>
     </section>
     <section id="experience">
         <h2>Experience</h2>
-        <h3>Senior Full Stack Developer & Cloud Solution Architect</h3>
-        <p>Microsoft Israel, 2022 - Present</p>
+        <h3>Senior Full Stack Developer & Cloud Solution Architect – Microsoft Israel (2022 - Present)</h3>
         <ul>
-            <li>Design and development of scalable, cloud-native applications using Azure services</li>
-            <li>Built monitoring systems integrated with Grafana for critical alerts</li>
-            <li>Conducted workshops and proof-of-concepts for internal and external teams</li>
-            <li>Led bug investigations and delivered performance optimizations for production systems</li>
-            <li>Wrote unit and end-to-end tests with xUnit and Jest</li>
-            <li>Configured CI/CD pipelines with Azure DevOps and GitHub Actions</li>
+            <li>Architected scalable cloud-native applications using Azure services.</li>
+            <li>Led POCs, internal workshops, and production performance optimizations.</li>
+            <li>Built robust CI/CD pipelines with Azure DevOps and GitHub Actions.</li>
         </ul>
-        <h3>Team Lead & Senior Full Stack Developer</h3>
-        <p>Brinks Inc, 2016 - 2022</p>
+        <h3>Team Lead & Senior Full Stack Developer – Brinks Inc (2016 - 2022)</h3>
         <ul>
-            <li>Led a team of 5 developers in agile projects</li>
-            <li>Designed microservices-based backend in .NET and maintained frontend in React and jQuery</li>
-            <li>Integrated RabbitMQ for message-driven architecture</li>
-            <li>Developed BI dashboards using SSRS and Kibana</li>
-            <li>Modernized legacy apps and migrated workloads to cloud infrastructure</li>
+            <li>Led a team of 5 developers working on full-stack web applications.</li>
+            <li>Integrated RabbitMQ and designed microservices architecture.</li>
+            <li>Delivered BI dashboards and modernized legacy systems to the cloud.</li>
         </ul>
-        <h3>.NET Full Stack Developer</h3>
-        <p>Brinks Inc – Ness Technologies, 2009 - 2016</p>
+        <h3>.NET Full Stack Developer – Ness Technologies (2009 - 2016)</h3>
         <ul>
-            <li>Created scalable backend APIs in C# and .NET</li>
-            <li>Built internal tools for process automation and system diagnostics</li>
-            <li>Worked with SQL Server and MongoDB for transactional and document data storage</li>
-            <li>Collaborated with cross-functional teams for client-specific requirements</li>
+            <li>Developed backend systems and internal tools using C# and .NET.</li>
+            <li>Worked with SQL Server and MongoDB for data-driven applications.</li>
         </ul>
     </section>
     <section id="education">
         <h2>Education</h2>
-        <p>Open University of Israel – BSc. in Computer Science (In Progress)</p>
-        <p>John Bryce – Certified Software Developer Program</p>
+        <p><strong>Open University of Israel</strong> – BSc in Computer Science (In Progress)</p>
+        <p><strong>John Bryce</strong> – Certified Software Developer Program</p>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:tesfai80@hotmail.com">tesfai80@hotmail.com</a></p>
+        <p>Email: <a href="mailto:tesfai80@hotmail.com" style="color:#64ffda">tesfai80@hotmail.com</a></p>
         <p>Phone: 054-659-2985</p>
         <p>Location: Rishon Le Zion, Israel</p>
     </section>
     <footer>
         <p>&copy; <span id="year"></span> Tesfay Tadesse</p>
     </footer>
-    <script src="js/scripts.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>

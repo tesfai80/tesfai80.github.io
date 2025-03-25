@@ -1,182 +1,174 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background: url('../images/code-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #f4f4f4;
+    color: #f0f0f0;
 }
 
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.85);
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    margin: 0 auto;
-    display: block;
+    margin-bottom: 1rem;
+    border: 3px solid #0e76a8;
 }
 
 header h1 {
-    margin: 0.5rem 0 0.2rem 0;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
 }
 
 header p {
-    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #aaa;
 }
 
 .social-links {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .social-links a {
     color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-.social-links .linkedin {
-    color: #0e76a8;
+.social-links a:hover {
+    transform: scale(1.2);
 }
 
+/* Navigation */
 nav {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 0.75rem;
     text-align: center;
-    padding: 0.5rem 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
     transition: background 0.3s;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
+/* Sections */
 section {
-    padding: 2rem;
+    background: rgba(0, 0, 0, 0.85);
     margin: 2rem auto;
-    width: 80%;
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    color: #f4f4f4;
-    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #444;
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
-.skills-table {
-    margin-top: 1rem;
-}
-
+/* Skills Table */
 .skills-table table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 .skills-table th, .skills-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
     text-align: left;
+    padding: 1rem;
+    vertical-align: top;
 }
 
 .skills-table th {
-    background-color: #555;
+    background-color: #222;
     color: #fff;
+    width: 30%;
 }
 
 .skills-table td {
-    background-color: #333;
-    color: #fff;
+    background-color: #111;
 }
 
-.skills-table .skill {
+.skill {
     display: inline-block;
-    background: #444;
-    border-radius: 3px;
-    padding: 5px 10px;
-    margin: 2px;
-    font-weight: bold;
-    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin: 4px;
+    font-size: 0.875rem;
     transition: background 0.3s;
 }
 
-.skills-table .skill:hover {
-    background: #555;
+.skill:hover {
+    background: #444;
 }
 
+/* Lists */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: disc;
+    padding-left: 1.5rem;
 }
 
 ul li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
 }
 
-ul li:last-child {
-    border-bottom: none;
-}
-
+/* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    color: #aaa;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-    header, nav, section, footer {
-        padding: 1rem;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    nav ul {
+        flex-direction: column;
     }
 
     section {
-        width: 90%;
+        width: 95%;
+        padding: 1.5rem;
     }
 
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill {
-        width: 100%;
-        text-align: center;
+    .profile-img {
+        width: 100px;
+        height: 100px;
     }
 }
